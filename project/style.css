@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:azure;
+}
+
+
+
+.header{
+    display: flex; 
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 0em;
+    margin: 0.3em;
+    margin-top: 0.5em;
+
+    color: #ffc800;
+    font-family: "Montserrat", -apinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size:xx-large;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50%;
+
+}
+ 
+
+
+#menu{
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    width: 40%;
+    height: 3em;
+    padding: 1em;
+    background: orange;
+    color: white;
+    padding: 1em;
+    margin: 0em 1em 0em 1em;
+    text-align: center;
+    flex-grow: 1;
+        flex-shrink: 1;
+    
+}
+.headimg{
+    width: 4em;
+}
+
+.container{
+
+    border: 0.005em dashed black;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;  
+
+}
+
+.sidebar{
+    border: 0.4em dashed palevioletred;
+    height: 100%;
+    padding: 1em;
+    background-color: #f0f0ff;
+    justify-content: center;
+
+    width: 18em;
+        flex-basis: 160px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    
+}
+.sidebar>#img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+#img>button{
+    background-color:powderblue;
+    width: 14em;
+}
+
+article{
+    width: 33%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #ffe0e0;
+    padding: 1em;
+    
+}
+article>div>img{
+    width: 15em;
+    
+}
+#firstsection{
+    display: flex;
+    border: #ffc800 0.4em dashed;
+    margin-right: auto;
+    height: auto;
+    flex-basis: auto;
+    padding: 3em;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+#secondsection{
+    flex: none;
+    border: #ffc800 0.4em dashed;
+    margin-right: auto;
+    height: auto;
+    flex-basis: auto;
+    padding: 3em;
+    align-items: center;
+    text-align: center;
+}
+
+#footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 70em) {
+    .sidebar{
+        width: 93%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 1em;
+        background-color: aqua;
+}
+.sidebar#img{
+    flex-wrap: wrap;
+}
+
+#firstsection{
+    flex-wrap: wrap;
+}
+
+.header
+{
+    flex-wrap: wrap;
+    flex-grow: 0;
+        flex-shrink: 0;
+        justify-items: center;
+        justify-content: center;
+}
+#menu{
+    margin: 0.3em;
+    
+    
+}
+}
+@media screen and (max-width: 30em) {
+    .sidebar{
+        width: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 1em;
+        background-color: aqua;
+        flex-wrap: wrap;
+        justify-items: center;
+}
+}
+
+@media screen and (min-width: 60em) {
+    .sidebar{
+        width: 18em;
+        flex-basis: 160px;
+        flex-grow: 0;
+        flex-shrink: 0;
+}
+}

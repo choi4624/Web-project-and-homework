@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just Read the Home Situation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+    
+</head>
+<body>
+
+    <div class="header">
+        
+        
+        <div id="menu">
+        PM2.5
+        <img src="./img/dust.png" alt="icons" class="headimg">
+        </div>
+        <div id="menu" >
+            Sensor list <br> Of my house
+        </div>
+        <div id="menu">
+        TEMP + HUMIDITY
+        <img src="./img/temperature-control.png" alt="" class="headimg">
+        </div>
+        
+    </div>
+
+
+
+<div class="container">
+
+    <article>
+    <div id="firstsection">
+<img src="./img/free-icon-humidity-sensor-7013158.png" alt="">
+<div><h3> 습도 </h3>
+<p id="humidity">
+    humidity 
+</p></div>
+
+<img src="./img/free-icon-temperature-3815449.png" alt="">
+<div><h3> 온도 </h3>
+<p id="temperature">
+ temperature 
+</p></div>
+    </div>
+
+    <div id="secondsection">
+        <img src="./img/air-pollution.png" alt="">
+        <h3> 미세먼지 / CO2 </h3>
+        <div id="aircondition">
+        <p id="pm2.5"> base PM2.5 is need to update </p>
+        <p id="CO2"> base CO2 </p>
+        </div>
+    </div>
+</article>
+<aside>
+    <div class="sidebar">
+        <div id="text" style="text-align: center;">
+        온도 설정시 주의사항 <br> 이 버튼으로 작동하는 결과는 직관적이지 않기 때문에, 예측할 수 없는 결과가 나올 수 있습니다. 
+        </div>
+        <br>
+        <div id="img">
+            <button type="button" class="btnEventHot" id="hot"><img src="./img/object sun weather shine brightness.svg" alt="btnEventhot" id="hot">1도 증가</button>
+
+            <button type="button" class="btnEventCold" id="cold"> <img src="./img/object snowflake snowflake.svg" alt="btnEventCold" id="cold">1도 감소</button>        
+        </div>
+    </div>
+</aside>
+</div>
+
+
+
+    <div id="footer">
+        <a href="./img/img.html">source of img list</a>
+        <br>
+        <a href="http://ziot.i4624.tk/test"> BootStrap version </a>
+    </div>
+</body>
+</html>
